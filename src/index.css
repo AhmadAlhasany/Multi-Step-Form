@@ -59,9 +59,10 @@ background-color: #EEF5FF;
   body{
     display: block;
     width: auto;
+    position: relative;
   }
   html{
-    height: 100vh;
+    min-height: 100vh;
   }
   .form{
     flex-direction: column;
@@ -75,6 +76,7 @@ background-color: #EEF5FF;
     background-color: #EEF5FF;
     padding: 0px;
     align-items: center;
+    padding-bottom:50px;
   }
   .form-page{
     width: 90%;
