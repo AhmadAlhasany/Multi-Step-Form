@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+ font-family: 'My Font';
+ src: url('/public/assets/fonts/Ubuntu-Regular.ttf');
+ font-weight: normal;
+}
+@font-face {
+  font-family: 'My Font';
+  src: url('/public/assets/fonts/Ubuntu-Bold.ttf');
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: 'My Font';
+  src: url('/public/assets/fonts/Ubuntu-Medium.ttf');
+  font-weight: 500;
+ }
+
+*{
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  width:100%;
+  margin: 0px;
+ }
+body{
+font-family: 'My Font';
+margin: 0px;
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #EEF5FF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form {
+  background-color: white;
+  border-radius: 10px ;
+  width: 848px;
+  height: 512px;
+  padding: 10px;
+  display: flex;
+}
+.form-window{
+  display: flex;
+  flex-direction: column;
+  padding: 32px 60px;
+  width: 70%;
+}
+.form-page{
+  height: 90%;
+}
+.form-buttons{
+  width: 100%;
+  height: 10%;
+}
+
+@media (max-width:800px){
+  body{
+    display: block;
+    width: auto;
+  }
+  html{
+    height: 100vh;
+  }
+  .form{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding:0px;
+  }
+  .form-window{
+    width: 100%;
+    background-color: #EEF5FF;
+    padding: 0px;
+    align-items: center;
+  }
+  .form-page{
+    width: 90%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+    height: auto;
+  }
+  .form-buttons{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    bottom: 0;
+    position: absolute;
+  }
 }

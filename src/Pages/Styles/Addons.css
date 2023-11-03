@@ -1,0 +1,49 @@
+h1{
+    margin: 9px 0px;
+    color:#001D50;
+}
+p{
+    color:#9696A0;
+    margin-top: 7px;
+    margin-bottom: 25px;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #888888;
+}
+
+.cflex p{
+    font-weight: 400;
+}
+
+.show[type="checkbox"]{
+    display: block;
+    margin: 20px;
+    height: 19px;
+    width: 19px;
+}
+.show[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+.show[type="checkbox"]:checked{
+    accent-color: #4742FB;
+}
+.rflex{
+    display: flex;
+    align-items: center;
+    color:#001D50;
+    font-weight: bold;
+}
+.rflex p{
+    margin-bottom: 0px;
+}
+.sel{
+    border: 2px solid #B5B4D4;
+}
