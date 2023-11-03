@@ -60,9 +60,10 @@ background-color: #EEF5FF;
     display: block;
     width: auto;
     position: relative;
+    min-height: 100svh;
   }
   html{
-    min-height: 100vh;
+    min-height: 100svh;
   }
   .form{
     flex-direction: column;
